@@ -7,7 +7,7 @@ from sun_cnn import CNN, dataloader
 '''
 Initialize the Network
 '''
-binsize=45 #degrees
+binsize=20 #degrees
 bin_edges = np.arange(-180,180+1,binsize)
 num_bins = bin_edges.shape[0] - 1
 cnn = CNN(num_bins) #Initialize our CNN Class
